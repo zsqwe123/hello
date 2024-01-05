@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+</head>
+<body>
+    <h1>注册</h1>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="department">部门：</label>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="phone_number">手机号：</label>
+        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{8}" required>
+        <small>格式：123-45678901</small><br><br>
+
+        <label for="photo">照片信息：</label>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
